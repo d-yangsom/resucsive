@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+           /*  function f(x){
+                return 3.28 * x //จบการทำงานเลย
+            }
+        alert( f(6.5) ) */
+        /* function max(x, y){
+            if(x > y) return x
+            if(x <= y) return y
+        }
+        alert(max(3,5)) */
+        //-------------------------//
+       /*  function max(x,y){
+            if(x > y) return x
+            if(x <= y) return y
+        }
+        function trimax(a,b,c){
+            var m = max(a,b)
+            var n = max(m,c)
+            return n
+        }
+        alert( trimax(100,3000,999933)) */
+        //--------function recursion EX1 --------//
+        /* function f(h){
+            if( h < 1.0 ) return 0
+            return 1 + f(h * 0.55) //resucion function
+        }
+        alert( f(100) ) */
+        //--------function recursion EX2 --------//
+       /*  function sum(n){
+            if( n == 1 ) return 1
+            return sum(n-1) + n
+        }
+        alert( sum(5)) */
+        //--------function recursion EX3 --------//
+        /* function total(year, deposit){
+            if(year == 0) return deposit
+            return deposit * 1.0125 ** year
+        }
+        alert( total(5, 80000)) */
+        //--------function recursion EX4 fibonaci --------// ให้คิดแบบบันได _|-
+        function count(n){
+            if(n == 1) return 1
+            if(n == 2) return 2
+            return count(n - 1) + count(n - 2) 
+        }
+        var numbers = prompt('Enter number: ')
+        alert( count(numbers))
+        </script>
+    </body>
+</html>
